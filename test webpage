@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Performance Cars</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .login-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .login-form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #f39c12;
+            border: none;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #e08e0b;
+        }
+
+        /* Hide main content until logged in */
+        .main-content {
+            display: none;
+        }
+    </style>
+    <script>
+        function validateLogin(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username === 'JB01' && password === 'jbcar') {
+                document.querySelector('.login-section').style.display = 'none';
+                document.querySelector('.main-content').style.display = 'block';
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Luxury Performance Cars</div>
+    </header>
+
+    <div class="login-section">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form onsubmit="validateLogin(event)">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="logo-content">
+                <nav>
+                    <ul>
+                        <li><a href="#">Main Page</a></li>
+                        <li><a href="#">Car Meets</a></li>
+                        <li><a href="#">Vehicle Stats</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero" style="background-image: url('car image 4.jpg');">
+            <div class="hero-content">
+                <h1>HTX & STX Car People</h1>
+                <h2></h2>
+                <button>Explore</button>
+            </div>
+        </section>
+
+        <section class="model" style="background-image: url('hyundai.jpg');">
+            <div class="model-content">
+                <h1>Post your Daily's Here</h1>
+                <p>Dare to live more</p>
+                <button>Explore the models</button>
+            </div>
+        </section>
+
+        <section class="configurator" style="background-image: url('car image 3.jpg');">
+            <div class="configurator-content">
+                <h1></h1>
+                <nav>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="dealer-locator" style="background-image: url('velcoster logo.png');">
+            <div class="dealer-locator-content">
+                <h1>FIND YOUR PEOPLE</h1>
+            </div>
+        </section>
+
+        <section class="news">
+            <h1>Velcoster WORLD</h1>
+            <article>
+                <img src="car image 1.jpg" alt="News Image">
+                <div class="article-content">
+                    <h2>Tips and Tricks</h2>
+                    <p>Anything you have learned to help others on their vehicle</p>
+                    <button>Read More</button>
+                </div>
+            </article>
+            <article>
+                <img src="car image 2.jpg" alt="News Image">
+                <div class="article-content">
+                    <h2>Links to different shops for Car parts</h2>
+                    <button>Read More</button>
+                </div>
+            </article>
+            <article>
+                <img src="car image 5.jpg" alt="News Image">
+                <div class="article-content">
+                    <h2>Veloster News</h2>
+                    <button>Read More</button>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Financials</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Privacy & Legal</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+                <p>&copy; 2024 Veloster Group. All rights reserved.</p>
+                <div class="social-media">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
