@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Performance Vechicles</title>
+    <title>Performance Vehicles</title>
     <style>
         body {
             margin: 0;
@@ -29,6 +29,7 @@
             list-style: none;
             margin: 0;
             padding: 0;
+            align-items: center;
         }
 
         header nav ul li {
@@ -38,6 +39,13 @@
         header nav ul li a {
             color: #fff;
             text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .hero, .model, .configurator, .dealer-locator {
@@ -167,21 +175,19 @@
 </head>
 <body>
     <header>
-        <!--</p><div class="logo" style="background-image: url('logo.png');"></p>-->
-        </div class="logo-content">
-        <nav>
-            <ul>
-                <li><a href="#">Main Page</a></li>
-                <li><a href="#">Car Meets</a></li>
-                <li><a href="#">Vehicle Stats.</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </nav>
+        <div class="logo-content">
+            <nav>
+                <ul>
+                    <li><a href="#">Main Page</a></li>
+                    <li><a href="#">Car Meets</a></li>
+                    <li><a href="#">Vehicle Stats</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="LoginPage.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
+
     <section class="hero" style="background-image: url('car image 4.jpg');">
         <div class="hero-content">
             <h1>HTX & STX Car People</h1>
@@ -268,4 +274,3 @@
     </footer>
 </body>
 </html>
-

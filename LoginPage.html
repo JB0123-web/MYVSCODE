@@ -45,17 +45,17 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <input type="text" id="username" placeholder="username">
+        <input type="text" id="username" placeholder="Username">
         <input type="password" id="password" placeholder="Password">
         <button onclick="login()">Login</button>
     </div>
     <script>
         function login() {
-            const username = document.getElementById('ojbolarin').value;
-            const password = document.getElementById('jbcar').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
             
             // Simple validation (in a real scenario, this would involve server-side authentication)
-            if (username === 'user' && password === 'password') {
+            if (username === 'ojbolarin' && password === 'jcar') {
                 window.location.href = 'index.html'; // Redirect to the main page
             } else {
                 alert('Invalid credentials, please try again.');
@@ -64,41 +64,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
